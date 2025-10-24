@@ -423,7 +423,15 @@
       }
     </script>
     <script async type="text/javascript" src="index.js"></script>
+	  <!-- Force Safari keyboard to appear on tap -->
+<input type="text" id="keyboardFix" style="position:fixed;top:0;left:0;opacity:0;">
+<script>
+  document.body.addEventListener('touchstart', () => {
+    document.getElementById('keyboardFix').focus();
+  });
+</script>
   </body>
 </html>
+
 
 
